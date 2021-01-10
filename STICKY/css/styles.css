@@ -1,0 +1,204 @@
+* {
+  font-family: cursive;
+  padding: auto;
+  margin: 0;
+}
+
+body {
+  padding: 0 0px;
+  margin-bottom: 120px;
+  overflow: hidden auto;
+  background-image: linear-gradient(45deg, #b1afb1, #998f99);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: -120px;
+  min-height: 100;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: linear-gradient(45deg, rgba(255, 115, 0, 0.5), purple);
+  padding: 15px 10px;
+  color: #f8f408;
+  -webkit-box-shadow: 0 2px 3px #3b3535;
+          box-shadow: 0 2px 3px #3b3535;
+  margin: 0;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+body header a {
+  color: white;
+  text-decoration: none;
+}
+
+body .search-bar {
+  margin: 10px 20px auto;
+  padding: 7px 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 2px 3px #332b2b;
+          box-shadow: 0 2px 3px #332b2b;
+  font-weight: bold;
+}
+
+body .search-bar input {
+  outline: none;
+  border: none;
+  width: 90%;
+  margin: auto 3px;
+  font-size: 100%;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 5px;
+  background: #f0dbf0;
+  color: #710280;
+}
+
+body .search-bar i {
+  font-size: 70%;
+}
+
+body section.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 20px 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section.options button {
+  background-color: inherit;
+  outline: none;
+  border: none;
+}
+
+body section.options button a {
+  color: black;
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 16px;
+}
+
+body section.options button a.active {
+  color: #faf9f8;
+  font-weight: 600;
+}
+
+body section.apartment-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 30px;
+}
+
+body section.apartment-images div.apartment-image-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 2px 4px 5px #5e430b;
+          box-shadow: 2px 4px 5px #5e430b;
+  margin: auto auto 30px;
+  color: transparent;
+}
+
+body section.apartment-images div.apartment-image-card img {
+  max-width: 100%;
+}
+
+body section.apartment-images div.apartment-image-card div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section.apartment-images div.apartment-image-card div p {
+  background-image: linear-gradient(60deg, #1302ff, #0f1011);
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin: 5px 10px;
+}
+
+body section.apartment-images div.apartment-image-card div i {
+  padding: 15px;
+}
+
+body section.apartment-images div.apartment-image-card button {
+  padding: 6px;
+  border: none;
+  outline: transparent;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #fa4113;
+  color: #000;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+body section.apartment-images div.apartment-image-card button:hover {
+  background-color: #eb2a08;
+}
+
+body section.apartment-images div.apartment-image-card button:active {
+  background-color: #f8a50a;
+}
+
+body section.see-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 30px;
+}
+
+body section.see-more h5 {
+  text-align: right;
+  margin-right: 2%;
+}
+
+body footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #b625b6;
+  margin: 0 0;
+  height: 120px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 30px 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,93 @@
+*{
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursivej;
+}
+body{
+    background-image: linear-gradient(to left, blue 8%, pink);
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh;
+    max-width: 100vw;
+    padding: 20vh;
+}
+.calculator{
+    border: 2px solid black;
+    position: relative;
+    display: inline-table;
+    border-radius: 10px;
+
+}
+.screen-display{
+    background-color: rgba(99, 39, 155, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid black;
+    border-bottom-width: 3px;
+    height: 15vh;
+    word-wrap: middle;
+    word-break: break-all;
+    font-family: cursive;
+    font-size: 1.9rem;
+    
+}
+.screen-display .prev-operand{
+    color: rgb(233, 217, 220);
+    font-size: 1.5rem;
+}
+.screen-display .current-operand{
+    font-size: 2rem;
+    color: rgb(17, 5, 73);
+}
+    .controls{
+    display: flex;
+    flex-wrap: wrap;
+}
+.num-btns{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax();
+}
+.operations-btns{
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+}
+.clear-btn{
+    grid-column:span 2,4;
+}
+.btn{
+    padding: 15px;
+    margin: 4px;
+    border: 1px solid rgb(219, 9, 9);
+    border-radius: 6px;
+    background-color: lightsteelblue;
+    transition:background-color 0.5s ease;
+    color: black;
+    font-size: 20px;
+}
+.btn:active{
+    color: lightgoldenrodyellow;
+    background-color: #0a055a;
+}
+.btn:hover{
+    color: #14046d;
+    background-color: rgb(135, 121, 206);
+ 
+}
+.equals-btn, .result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.delete-btn{
+    grid-column: span 3;
+}
+.result{
+    flex:1;
+}

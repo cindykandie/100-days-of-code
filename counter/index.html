@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>A Counter</title>
+</head>
+<body>
+<div class="card-counter">
+   
+
+    <h2>COUNTER</h2>
+
+    <div class="output-section">0</div>
+
+    <div class="controls">
+        <button onclick="Reducer()" class="decrease">DECREASE</button>
+        <button onclick="Increaser()"  class="increase">INCREASE</button>
+    </div>
+    <div class="modes">
+        <button onclick="darkMode()"class="dark">Darkmode</button>
+        <button onclick="lightMode()"class="light">Lightmode</button>
+    </div>
+    <div class="modes">
+        <button onclick="restart()"class="light restart-btn">RESTART</button>
+    </div>
+
+</div>
+</body>
+
+<script>
+let increaseBtn = document.querySelector('.increase')
+let decreaseBtn = document.getElementsByClassName('decrease')
+let restartBtn = document.querySelector('.restart-btn')
+
+let outputBox = document.querySelector('.output-section')
+let nombre = Number(outputBox.textContent)
+
+function Reducer(e){
+        nombre--
+        outputBox.textContent = nombre
+        numberColor()
+}
+
+function Increaser(e){
+        nombre = Number(outputBox.textContent)
+        nombre++
+        outputBox.textContent = nombre
+        numberColor()
+
+}
+function restart(e){
+        nombre = 0
+        outputBox.textContent = nombre
+        numberColor()
+}
+function numberColor(){
+    if(nombre < 0){
+        outputBox.style.color = 'red'
+    }
+    else if(nombre > 0){
+        outputBox.style.color = 'rgb(15,234,17)'
+    }else{
+        outputBox.style.color = '#311'
+    }
+
+}
+
+function darkMode(e){
+    document.querySelector('body').style.backgroundImage="linear-gradient(to bottom,grey,90%,black)"
+    document.querySelector('body').style.filter='grayscale(1)'
+    
+}
+function lightMode(e){
+     
+    document.querySelector('body').style.backgroundImage="linear-gradient(to left,rgb(66, 25, 179),rgb(204, 17, 204))" 
+    document.querySelector('body').style.filter='grayscale(0)' 
+
+}
+</script>
+
+</html>

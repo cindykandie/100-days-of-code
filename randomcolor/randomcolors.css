@@ -1,0 +1,27 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+.wrapper{
+width: 100%;
+height: 100%;
+
+}
+.box{
+width: 100vw;
+height:100vh;
+border: 2px solid purple;
+border-radius: 2px;
+background-color: rgb(255, 255, 0);
+text-align: center;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
+.rgb{
+margin:0 auto;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight:400;
+}

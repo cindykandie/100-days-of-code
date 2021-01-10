@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+     background-image:  linear-gradient(to left,rgb(66, 25, 179),rgb(204, 17, 204));
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     filter: grayscale(0);
+}
+.card-counter{
+    border: 2px solid black;
+    max-width: 700px;
+    min-width: 90vw;
+    height: 90vh;
+    margin: 30px 5px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 2px 3px 3px rgb(5, 4, 7);
+}
+
+h2,.output-section{
+    text-align: center;
+    font-size: 250%;
+    color: rgb(17, 15, 15);
+    padding: 15px 0;
+}
+.output-section{
+    font-size: 1100%;
+    margin: 0;
+    font-weight: 900;
+    font-family: Times, 'Times New Roman', serif;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.controls button{
+    padding: 14px 18px;
+    margin: 20px 10px;
+    border-radius: 8px;
+    font-weight: 900;
+    outline: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.controls button:hover{
+    background-color: rgb(238, 226, 226);
+    box-shadow: 4px 4px 4px black;
+    color: black;
+    font-weight: 700;
+
+}
+.decrease{
+    background-color: crimson;
+    color: ghostwhite;
+}
+.increase{
+    background-color: rgb(37, 220, 20);
+    color: ghostwhite;
+}
+.modes{
+    display: flex;
+    justify-content: space-around;
+    
+}
+button.dark,button.light,button.light:hover{
+   margin: 10px;
+   background-color: darkblue;
+   color: cornsilk;
+   padding: 7px;
+   border-radius: 6px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button.light, button.dark:hover{
+    color: darkblue;
+    background-color: cornsilk;
+
+}

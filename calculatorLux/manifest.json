@@ -1,0 +1,21 @@
+{
+    "short_name": "Le Calc",
+    "name": "calcCindyK",
+    "icons": [
+        {
+            "src":"calc.jpg",
+            "type": "image/jpg",
+            "sizes": "192x192"
+        },
+        {
+            "src":"calc2.jpg",
+            "type": "image/jpg",
+            "sizes":"512x512"  
+        }
+    ],
+    "start_url":"/index.html",
+    "background-color":"#fc34c0",
+    "display":"standalone",
+    "theme_color":"#fc34c0"
+
+}

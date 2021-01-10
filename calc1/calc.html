@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="calc.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen-display" id="display">
+            <div class="prev-operand">0</div>
+            <div class="current-operand"></div>
+        </div>
+        <div class="controls">
+            <div class="num-btns">
+                <button class="btn number" id="nine">9</button>
+                <button class="btn number" id="eight">8</button>
+                <button class="btn number" id="seven">7</button>
+                <button class="btn number" id="six">6</button>
+                <button class="btn number" id="five">5</button>
+                <button class="btn number" id="four">4</button>
+                <button class="btn number" id="three">3</button>
+                <button class="btn number" id="two">2</button>
+                <button class="btn number" id="one">1</button>
+                <button class="btn number" id="dot">.</button>
+                <button class="btn number" id="zero">0</button>
+                <button class="btn clear-btn" id="">AC</button>
+                <button class="btn delete-btn" id="">DEL</button>
+            </div>
+            <div class="operations-btns">
+                <button class="btn operation" id="add" >+</button>
+                <button class="btn operation" id="subtract">-</button>
+                <button class="btn operation" id="multiply">*</button>
+                <button class="btn operation" id="divide">/</button>
+
+            </div>
+        </div>
+        <div class="equals-btn">
+            <button class="btn result" id="result">&equals;</button>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>

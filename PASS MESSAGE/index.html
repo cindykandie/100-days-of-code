@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass the message</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <div class="message-box">
+        <h2>Type the message you would like to pass!</h2>
+        <input class="type-here" placeholder="Type here"></input><br>
+   
+    <button class="submit" id="submit" >Submit</button>
+
+    <h2>Message sent is:</h2>
+    <p>No Message Was Typed!! Type above</p>
+    <div id="the-message">Message:</div>
+</div>
+<script>
+let submitButton = document.querySelector('button')
+let writtenMessage = document.querySelector('.type-here')
+let passedMessage = document.querySelector('#the-message')
+let errorMessage = document.querySelector('p') 
+
+submitButton.addEventListener('click', passMessage)
+function passMessage(){
+    if(writtenMessage.value ===''){
+        errorMessage.style.display='block'
+    }else{ 
+        passedMessage.textContent = writtenMessage.value
+        errorMessage.style.display='none'
+        writtenMessage.value =''
+    }
+}
+</script>
+</body>
+</html>

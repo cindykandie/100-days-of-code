@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 115%;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:yellow;
+}
+body{
+    background-image: linear-gradient(to right, rgb(211, 32, 211), deeppink);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.clock{
+   position: relative;
+    width: 500px;
+    height: 500px;
+    background-color:rgba(18, 18, 161, 0.3);
+    border-radius: 500px;
+    border: 6px solid blanchedalmond;
+    transform: translate(-50%);
+    margin-left: 300px;
+}
+.clock:hover{
+    background-color: rgb(255, 0, 157);
+}
+
+.clock::after{
+    position: absolute;
+    height: 20px;
+    width:20px;
+    background-color: rgb(116, 221, 240);
+    content: "";
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    z-index: 6;
+}
+.clock .number::before{
+    position: absolute;
+    width:5px;
+    height:6px;
+    background-color: darkblue;
+    z-index: 6;
+    content: "";
+    left:50%;
+    transform: translate(-50%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.clock .number{
+    --rotation: 0deg; /* OR US A VARIABLE */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation)); /* transform: rotate(0deg); */
+
+
+}
+.clock .number01{--rotation:6deg;}
+.clock .number02{--rotation:12deg;}
+.clock .number03{--rotation:18deg;}
+.clock .number04{--rotation:24deg;}
+.clock .number1{--rotation:30deg;}
+
+.clock .number1-1{--rotation:36deg;}
+.clock .number1-2{--rotation:42deg;}
+.clock .number13{--rotation:48deg;}
+.clock .number14{--rotation:54deg;}
+.clock .number2{--rotation:60deg;}
+
+.clock .number21{--rotation:66deg;}
+.clock .number22{--rotation:72deg;}
+.clock .number23{--rotation:78deg;}
+.clock .number24{--rotation:84deg;}
+.clock .number3{--rotation:90deg;}
+
+
+.clock .number31{--rotation:96deg;}
+.clock .number32{--rotation:102deg;}
+.clock .number33{--rotation:108deg;}
+.clock .number34{--rotation:114deg;}
+.clock .number4{--rotation:120deg;}
+
+
+.clock .number41{--rotation:126deg;}
+.clock .number42{--rotation:132deg;}
+.clock .number43{--rotation:138deg;}
+.clock .number44{--rotation:144deg;}
+.clock .number5{--rotation:150deg;}
+
+
+.clock .number51{--rotation:156deg;}
+.clock .number52{--rotation:162deg;}
+.clock .number53{--rotation:168deg;}
+.clock .number54{--rotation:174deg;}
+.clock .number6{--rotation:180deg;}
+
+
+.clock .number61{--rotation:186deg;}
+.clock .number62{--rotation:192deg;}
+.clock .number63{--rotation:198deg;}
+.clock .number64{--rotation:204deg;}
+.clock .number7{--rotation:210deg;}
+
+
+.clock .number71{--rotation:216deg;}
+.clock .number72{--rotation:222deg;}
+.clock .number73{--rotation:228deg;}
+.clock .number74{--rotation:234deg;}
+.clock .number8{--rotation:240deg;}
+
+
+.clock .number81{--rotation:246deg;}
+.clock .number82{--rotation:252deg;}
+.clock .number83{--rotation:258deg;}
+.clock .number84{--rotation:264deg;}
+.clock .number9{--rotation:270deg;}
+
+
+.clock .number91{--rotation:276deg;}
+.clock .number92{--rotation:282deg;}
+.clock .number93{--rotation:288deg;}
+.clock .number94{--rotation:294deg;}
+.clock .number10{--rotation:300deg;}
+
+
+.clock .number101{--rotation:306deg;}
+.clock .number102{--rotation:312deg;}
+.clock .number103{--rotation:318deg;}
+.clock .number104{--rotation:324deg;}
+.clock .number11{--rotation:330deg;}
+
+
+.clock .number111{--rotation:336deg;}
+.clock .number112{--rotation:342deg;}
+.clock .number113{--rotation:348deg;}
+.clock .number114{--rotation:354deg;}
+.clock .number12{--rotation:360deg;}
+
+
+
+
+.clock .hand{
+    --rotation: 0;
+    position: absolute;
+    background-color: pink;
+    left:50%;
+    bottom: 50%;
+    transform: translate(-50%) rotate(calc(var(--rotation) * 1deg));
+    transform-origin: bottom;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.clock .hand.second{
+    width: 3px;
+    height: 43%;
+    background-color: blue;
+    border: 1px solid inherit;
+    z-index: 5;
+
+}
+.clock .hand.minute{
+    width: 7px;
+    height: 38%;
+    background-color: black;
+    border: 1px solid inherit;
+    z-index: 4;
+
+}
+.clock .hand.hour{
+    width: 12px;
+    height: 20%;
+    background-color: rgb(116, 221, 240); 
+    border: 1px solid inherit;
+    z-index: 3;
+}

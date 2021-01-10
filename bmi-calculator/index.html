@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>BMI Calculator </title>
+</head>
+<body>
+    <a href="https://cindykandie.netlify.app"><img src="static/assets/icon-logo-favicons/logo2.png" alt="" width="" srcset=""></a>
+    <div class="container">
+        <h1>Body Mass Index <span> (BMI)</span></h1>
+        <p>BMI is measured in kilograms per meter squared(kg/m2) and helps you see if you are of healthy weight in relation to your height. This calculator will help you find your BMI. <br> (Strictly for teenagers and adults!)
+        </p>
+        <form>
+            <h2>Please enter:</h2>
+            <label for="">Your Weight:</label> <br>
+            <input class="UIweight" type="number" value=""> kgs
+            <br>
+            <br>
+
+            <label for="">Your Height:</label> <br>
+            <input value="" class="UIheight" type="number"> m
+            <br> <br>
+          </form>
+
+            <button class="calculating" onclick="getBMI()">Calculate</button> 
+            <br> <br>
+             
+            <div class="result-box">
+              <label class="bmi-result-label" for="">Your BMI is:</label> 
+            <div class="bmi-box">
+              <h4>
+                <span class="bmi-result"></span> 
+              </h4>
+            </div>
+            </div>
+            
+         <br> <br> 
+        <div class="health-message">
+           
+        </div>
+    </div>
+     <footer>
+            <div class="socials">
+                <a href="https://github.com/cindykandie">
+                    <img src="static/assets/icon-logo-favicons/git.svg" alt="" > 
+                </a>
+
+                <a href="https://twitter.com/cindy_kandie">
+                    <img src="static/assets/icon-logo-favicons/twitter.svg" alt="" > 
+                </a>
+
+                <!-- <a href="https://github.com/cindykandie">
+                    <img src="static/assets/icon-logo-favicons/whatsapp.svg" alt="" > 
+                </a> -->
+                <a href="https://cindykandie.netlify.app"><img src="static/assets/icon-logo-favicons/main-logo.png" alt="" width="" srcset=""></a>
+
+                <a href="https://m.youtube.com/channel/UCZtWqdhrmQyNNBR2vZtbOuw/videos">
+                    <img src="static/assets/icon-logo-favicons/youtube.svg" alt="" > <br>
+                </a>
+
+                <a href="https://ke.linkedin.com/in/cindy-kandie-0b7835151">
+                    <img src="static/assets/icon-logo-favicons/linkedin.svg" alt="" > <br>
+                </a>
+                
+            </div>
+            <a href="https://cindykandie.netlify.app">
+              <p class="copyright"> All rights reserved.<br>
+                @cindykandie<br>
+                2020
+            </p>
+            </a>
+            
+        </footer>
+      <!-- <script src="static/main.js"></script> -->
+      <script>
+        const weight = document.querySelector('.UIweight')
+const height = document.querySelector('.UIheight')
+const BMI = document.querySelector('.bmi-result')
+const healthMessage = document.querySelector('.health-message')
+
+
+function getBMI(){
+    let theBmi,
+        healthText,
+        h 
+        healthText= h
+        theBmi = weight.value/(Math.pow(height.value,2))
+
+    parseInt(theBmi)
+   
+
+    BMI.innerText=theBmi.toFixed(2)
+
+    healthMessage.innerText = h
+
+  if(theBmi<=0||weight.value<=0 || height.value<=0){
+    BMI.innerText='Error'
+    h = 'The values entered are incorrect'
+   
+  }else if(theBmi<=18.4){
+    h = 'You are Underweight'
+  }else if(theBmi<=24.9){
+    h = 'You are of Normal Healthy weight'
+  }else if(theBmi<=29.9){
+    h = 'You are Overweight'
+  }else{
+  h = 'You are Obese'
+}
+healthMessage.innerText = h
+// weight.value=''
+// height.value=''
+}
+
+
+</script>
+</body>
+</html>

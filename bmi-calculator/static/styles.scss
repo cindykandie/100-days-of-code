@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Times, 'Times New Roman', serif,'Times New Roman', Times, serif, cursive;
+    
+}
+body{
+    padding:10px 20px;
+    background-color: rgb(221, 194, 221);
+    font-size: 110%;
+    a{
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 4rem;
+        }
+        img:hover{
+            filter: invert(1);
+        }
+    }
+    h1{
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 20px;
+        span{
+            color: rgb(77, 77, 173);
+            font-size:75%;
+        }
+    }
+    p{
+        text-align: justify;
+        width: auto;
+        min-width: 50%;
+        max-width: 450px;
+        margin: auto auto;
+        width: auto;
+    }
+
+    form{
+        text-align: justify;
+        width: auto;
+        min-width: 50%;
+        max-width: 450px;
+        margin: 20px auto;
+        font-size: 105%;
+        padding-left: 1.4rem;
+        
+        h2{
+            font-size: 150%;
+            padding-bottom: 1.2rem;
+        }
+        label{
+            color: rgb(3, 3, 80);
+            text-align: center;
+            padding-bottom: 1rem;
+            font-weight: 500;
+
+        }
+        input{
+            border: 2px solid rgb(88, 19, 19);
+            border-radius: 5px;
+            height: 70px;
+            font-size: 210%;
+            min-width: 200px;
+            max-width: 50%;
+            padding:auto;
+            padding-left: 50px;
+            font-weight: 700;
+        }
+        input:focus{
+            background-color: rgb(168, 104, 197);
+        }
+    }
+        button{
+            padding:10px 14px;
+            border-radius: 6px;
+            background-color: pink;
+            font-size: 1.2rem;
+            font-weight: 700;
+            width: 200px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            border: 5px solid black;
+
+        }
+        button:hover{
+            background-color: rgb(146, 107, 185);
+        }
+        .calculating{
+            background-color: rgb(195, 165, 224);
+            animation: around 3s infinite;
+            }
+            
+            
+        
+        .result-box{
+            display: flex;
+            flex-direction: column;
+        }
+        .bmi-result-label{
+            font-weight: 900;
+            font-size: 1.6rem;
+            margin: 20px auto;
+
+        }
+        .bmi-box{
+            border: 5px solid rgb(26, 3, 109);
+            border-radius: 5px;
+            min-height: 90px;
+            height: auto;
+            font-size: 1.6rem;
+            width: auto;
+            min-width: 200px;
+                       
+            max-width: 450px;
+            margin: 20px auto;
+
+            padding-top: 30px;
+            padding-right: 20px;
+         
+            text-align: center;
+            background-color: rgb(231, 161, 220);
+            color: rgb(86, 3, 97);
+            span{
+                color:rgb(12, 12, 131);
+            }
+
+        }
+        .bmi-box:hover{
+            background-color: rgb(178, 128, 201);
+        }
+        
+
+    .health-message{
+        border: 2px solid rgb(114, 77, 248);
+        border-radius: 4px;
+        min-height: 70px;
+        height: auto;
+        font-size: 150%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        text-align: center;
+        background-color: rgb(142, 219, 250);
+        width: auto;
+        min-width: 50%;
+        max-width: 450px;
+        margin: 20px auto;
+        font-weight: 600;
+        margin-bottom: 100px;
+        color: rgb(1, 1, 78);
+    }
+    .health-message:hover{
+        background-color: rgb(84, 161, 192);
+
+    }
+
+
+    footer{
+        position: absolute;
+        background-color: rgb(135, 5, 139);
+        left: 0;
+        right: 0;
+        font-size: 60%;
+        padding: 25px;
+        text-align: center;
+        margin-bottom: 0;
+        height: 100px;
+        .socials{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: auto 10%;
+            img{
+                width: 25px;
+            }
+            img:hover{
+                filter: invert(1);
+            }
+        }
+        
+       p{
+        width: 50%;
+        margin: 5px auto;
+        text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(236, 225, 225);
+        }
+        a:hover{
+            text-decoration: underline;
+            color: rgb(248, 244, 20);
+        }
+    }
+}
+
+@keyframes around{
+    10%{
+        border: 1px dotted rgb(118, 14, 236);
+
+    }
+    20%{
+        border: 2px dotted black;
+    }
+    30%{
+        border: 3px dotted black;
+    }
+    40%{
+        border: 4px dotted black;
+    }
+    50%{
+        border: 5px dotted black;
+    }
+    70%{
+        border: 6px dotted black;
+    }
+    100%{
+        border: 5px solid black;
+    }
+}

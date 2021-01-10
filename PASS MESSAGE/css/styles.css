@@ -1,0 +1,65 @@
+body{
+    height: 100vh;
+    background: rgb(214, 120, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 130% 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(114, 87, 87);
+    background-image: repeating-radial-gradient(rgb(233, 141, 187),rgb(214, 120, 214));
+
+
+}
+.message-box{
+    border: 2px solid black;
+    background: transparent;
+    padding: 15px 15px;
+    
+}
+input{
+    padding: 10px 10px;
+    background-color: rgb(237, 248, 195);
+    margin: 10px 10px;
+    border-radius: 5px;
+    width: 75%;
+    font: 17px Georgia, 'Times New Roman', Times, serif;
+
+}
+button{
+    background: rgb(145, 114, 173);
+    padding: 12px 10px;
+    font-size: 100%;
+    border-radius: 12px;
+    margin: auto auto;
+    width: 35%;
+    color:white;
+    outline: none;
+    border: 1px solid white;
+
+}
+button:hover{
+    border: 1px solid rgb(216, 12, 235);
+    background-image:linear-gradient(to top,orange,5%, rgb(236, 230, 248));
+    color: darkmagenta;
+    font-weight: 700;
+
+}
+p{
+    color: rgb(248, 72, 72);
+    background-color: rgba(248, 242, 248,.5);
+    border-radius: 4px;
+    padding:5px;
+    display:none;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-image:linear-gradient(to top,rgb(255, 136, 0),2%, rgb(236, 230, 248));
+
+
+}
+#the-message{
+    text-transform: uppercase;
+    background-color: rgb(251, 248, 252);
+    padding: 20px;
+    border-radius: 10px;
+}

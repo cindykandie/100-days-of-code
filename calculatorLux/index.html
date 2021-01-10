@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="" email="">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="manifest" href="manifest.json">
+	<title>Calculator</title>
+	<script>
+		if('serviceWorker' in navigator){
+			navigator.serviceWorker.register('sw.js')
+		}
+	</script>	
+</head>
+<!-- JavaScript||Calculator -->
+<body>
+	      <div class="h1">
+		      <h1>Do The Math!!</h1>
+	     </div>
+		  <div class="main-div">
+							<div class="screen" id="screen">
+								<p></p>
+							</div>
+
+							<div onclick="clearScreen()" class="clear" id="clear">
+								C
+							</div>
+
+				               <ul class="number-div">
+							             <li onclick="displayNum(1)">1</li>
+										 <li onclick="displayNum(2)">2</li>
+										 <li onclick="displayNum(3)">3</li>
+									     <li onclick="displayOperation('+')">+</li>
+									   
+										 <li onclick="displayNum(4)">4</li>
+										 <li onclick="displayNum(5)">5</li>
+										 <li onclick="displayNum(6)">6</li>
+										 <li onclick="displayOperation('*')">x</li>
+										 
+										 <li onclick="displayNum(7)">7</li>
+										 <li onclick="displayNum(8)">8</li>
+										 <li onclick="displayNum(9)">9</li>
+										 <li onclick="displayOperation('-')">-</li>
+										 
+										 <li onclick="displayNum(0)">0</li>
+
+										 <li onclick="displayNum('.')">.</li>
+
+										 <li onclick="displayValue('=')">=</li>
+
+									     <li onclick="displayOperation('/')">÷</li>	 							 
+							   </ul>
+		  </div>	
+		  <script type="text/javascript" src="scripts.js"></script>  
+</body>
+</html>

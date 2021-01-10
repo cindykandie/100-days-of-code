@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: antiquewhite;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+body h1 {
+  margin: 10px auto;
+  text-align: center;
+}
+
+body img {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+body .arrow {
+  width: 30px;
+  height: 30px;
+  border: 5px solid #f3f1f1;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: 90%;
+  border-bottom: none;
+  border-left: none;
+  position: absolute;
+  top: 30%;
+}
+/*# sourceMappingURL=styles.css.map */
